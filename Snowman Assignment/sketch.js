@@ -6,8 +6,6 @@ function setup() {
 
 function draw() {
   // Snowman,Abdol,March 7
-
-
   //create head
   ellipse(207, 78, 60, 60);
   fill(0, 0, 0);
@@ -22,7 +20,8 @@ function draw() {
   line(66,92,169,155);
   line(358,93,253,152);
   //create buttons
-  fill(0, 0, 0);
+
   ellipse(210,133,-9,8);
   ellipse(210,152,-9,8);
   ellipse(210,172,-9,8);
+}
