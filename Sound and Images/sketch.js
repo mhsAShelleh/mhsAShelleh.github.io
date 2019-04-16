@@ -17,10 +17,7 @@ function setup() {
 
 }
 
-  function preload() {
-    mySound = loadSound('collisionsound.mp3'); 
-    // Loads the sound file into the variable
-  }
+
 
 function draw() {
 
@@ -75,7 +72,10 @@ function mousePressed() {
     reset();
 }
 
-
+  function preload() {
+    mySound = loadSound('collisionsound.mp3'); 
+    // Loads the sound file into the variable
+  }
 
 
 
