@@ -18,7 +18,7 @@ function setup() {
   createCanvas(800,600);
   
     mySound.setVolume(0.1);
-    mySound.play();
+    mySound.play('collisionsound.mp3');
 
 }
 
