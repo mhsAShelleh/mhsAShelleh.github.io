@@ -1,5 +1,5 @@
  function preload() {
-    mySound = loadSound('collisionsound.mp3'); 
+    mySound = loadSound('collisionsound.mp3.wav'); 
     // Loads the sound file into the variable
   }
 
