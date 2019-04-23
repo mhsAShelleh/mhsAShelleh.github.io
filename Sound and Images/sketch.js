@@ -1,3 +1,8 @@
+ function preload() {
+    mySound = loadSound('collisionsound.mp3'); 
+    // Loads the sound file into the variable
+  }
+
 let x1=0
 let x2=600
 let y= 300
@@ -72,10 +77,7 @@ function mousePressed() {
     reset();
 }
 
-  function preload() {
-    mySound = loadSound('collisionsound.mp3'); 
-    // Loads the sound file into the variable
-  }
+ 
 
 
 
