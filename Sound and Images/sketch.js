@@ -71,14 +71,6 @@ function draw() {
     }
 
   }
-}
-
-function mousePressed() {
-    reset();
-}
-
- 
-
 
 
 
