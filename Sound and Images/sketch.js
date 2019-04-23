@@ -84,7 +84,7 @@ function mousePressed() {
 
 
 function keyPressed(){
-if (keyCode === KeyR);
+if (keyCode === 87);
 x1=0
 x2=600
 y= 300
