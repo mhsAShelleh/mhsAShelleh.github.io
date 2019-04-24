@@ -66,7 +66,7 @@ function draw() {
       x2speed*=-1;
     }
   }
- 
+}
 
 
 
