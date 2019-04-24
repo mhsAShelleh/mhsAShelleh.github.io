@@ -31,6 +31,7 @@ function draw() {
   //If the objects hit into one another
   if (hit===true){
     background(255,0,0);
+    playSound();
     stroke(0);
     textSize(60);
     text("GAME OVER",200,300);
@@ -69,6 +70,9 @@ function draw() {
 }
 
 
+function playSound(){
+ mySound.play();
+}
 
 
 function keyPressed(){
