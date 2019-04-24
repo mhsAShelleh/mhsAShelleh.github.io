@@ -24,7 +24,7 @@ function draw() {
 
   //check for collision
   hit= collideRectRect(x1,y,size,size,x2,y,size,size);
-  mySound.play();
+  
   //Output a statement to console
   print(hit);
 
@@ -73,6 +73,7 @@ function draw() {
 
 function keyPressed(){
  if (keyCode === 87){
+  mySound.play();
   x1=0
   x2=600
   y= 300
