@@ -1,5 +1,5 @@
 function preload() {
- let mySound = loadSound('collisionsound.wav');  // Loads the sound file into the variable
+ let mySound = loadSound('collisionsound.wav'); 
 }
 
 let x1=0
