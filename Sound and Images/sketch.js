@@ -1,5 +1,5 @@
 function preload() {
- mySound = loadSound('collisionsound.wav'); 
+ mySound = loadSound('grenade-launcher-daniel_simon.mp3'); 
 }
 
 let x1=0
