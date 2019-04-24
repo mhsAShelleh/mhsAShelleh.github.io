@@ -65,7 +65,7 @@ function draw() {
     if(x2>width || x2<0){
       x2speed*=-1;
     }
-
+  }
  
 
 
