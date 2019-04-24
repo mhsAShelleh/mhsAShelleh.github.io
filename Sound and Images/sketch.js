@@ -1,5 +1,5 @@
 function preload() {
- let mySound = loadSound('collisionsound.wav'); 
+ mySound = loadSound('collisionsound.wav'); 
 }
 
 let x1=0
@@ -68,7 +68,7 @@ function draw() {
     }
 
   }
-}
+
 
 
 
