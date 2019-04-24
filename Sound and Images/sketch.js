@@ -15,7 +15,6 @@ let hit= false;
 function setup() {
   // put setup code here
   createCanvas(800,600);
-  mySound.setVolume(0.1);
   mySound.play();
 
 }
@@ -67,7 +66,7 @@ function draw() {
       x2speed*=-1;
     }
 
-  }
+ 
 
 
 
