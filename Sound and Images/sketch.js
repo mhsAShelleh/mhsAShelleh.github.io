@@ -19,6 +19,18 @@ function setup() {
 }
 
 
+function keyPressed(){
+ if (keyCode === 87){
+  
+  x1=0
+  x2=600
+  y= 300
+  x1speed=5;
+  x2speed=5;
+  loop();
+ }
+}
+
 function draw() {
   //check for collision
   hit= collideRectRect(x1,y,size,size,x2,y,size,size);
@@ -70,14 +82,3 @@ function draw() {
 
 
 
-function keyPressed(){
- if (keyCode === 87){
-  
-  x1=0
-  x2=600
-  y= 300
-  x1speed=5;
-  x2speed=5;
-  loop();
- }
-}
