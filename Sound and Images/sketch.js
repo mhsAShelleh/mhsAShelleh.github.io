@@ -79,6 +79,4 @@ y= 300
 x1speed=5;
 x2speed=5;
 loop();
-
-
 }
