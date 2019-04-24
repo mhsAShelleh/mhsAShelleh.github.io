@@ -15,13 +15,12 @@ let hit= false;
 function setup() {
   // put setup code here
   createCanvas(800,600);
-  
-
+ 
 }
 
 
 function draw() {
-
+mySound.play();
   //check for collision
   hit= collideRectRect(x1,y,size,size,x2,y,size,size);
   
@@ -73,7 +72,7 @@ function draw() {
 
 function keyPressed(){
  if (keyCode === 87){
-  mySound.play();
+  
   x1=0
   x2=600
   y= 300
