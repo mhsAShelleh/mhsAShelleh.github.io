@@ -20,7 +20,6 @@ function setup() {
 
 
 function draw() {
-mySound.play();
   //check for collision
   hit= collideRectRect(x1,y,size,size,x2,y,size,size);
   
@@ -29,6 +28,7 @@ mySound.play();
 
   //If the objects hit into one another
   if (hit===true){
+   mySound.play();
     background(255,0,0);
     stroke(0);
     textSize(60);
