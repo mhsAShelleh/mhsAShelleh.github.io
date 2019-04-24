@@ -15,6 +15,7 @@ let hit= false;
 function setup() {
   // put setup code here
   createCanvas(800,600);
+  mySound.setVolume(0.1);
   mySound.play();
 
 }
@@ -69,15 +70,6 @@ function draw() {
   }
 }
 
-
-
-
-  function setup() {
-    createCanvas(640, 480);
-    // Notice that you have to put the variable name in front of the functions
-    mySound.setVolume(0.1);
-    mySound.play();
-  }
 
 
 function keyPressed(){
