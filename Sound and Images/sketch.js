@@ -19,17 +19,7 @@ function setup() {
 }
 
 
-function keyPressed(){
- if (keyCode === 87){
-  
-  x1=0
-  x2=600
-  y= 300
-  x1speed=5;
-  x2speed=5;
-  loop();
- }
-}
+
 
 function draw() {
   //check for collision
@@ -40,7 +30,6 @@ function draw() {
 
   //If the objects hit into one another
   if (hit===true){
-   mySound.play();
     background(255,0,0);
     stroke(0);
     textSize(60);
@@ -82,3 +71,14 @@ function draw() {
 
 
 
+function keyPressed(){
+ if (keyCode === 32){
+ mySound.play();
+  x1=0
+  x2=600
+  y= 300
+  x1speed=5;
+  x2speed=5;
+  loop();
+ }
+}
