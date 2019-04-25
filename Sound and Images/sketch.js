@@ -15,7 +15,7 @@ let hit= false;
 function setup() {
   // put setup code here
   createCanvas(800,600);
- 
+ background('photo-1480497490787-505ec076689f.jpg');
 }
 
 
