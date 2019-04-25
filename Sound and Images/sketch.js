@@ -77,7 +77,7 @@ function playSound(){
 
 
 function keyPressed(){
- if (keyCode === 32){
+ if (keyCode === 82){
   x1=0
   x2=600
   y= 300
