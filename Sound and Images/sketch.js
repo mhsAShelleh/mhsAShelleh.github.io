@@ -45,7 +45,7 @@ function draw() {
 
   //if they dont collide what to do
   else{
-    background(127,200,100)
+    image(img, 0, 0);  
     fill(127)
     rect(x1,y,size,size);
 
