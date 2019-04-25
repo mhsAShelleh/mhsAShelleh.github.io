@@ -15,7 +15,7 @@ let hit= false;
 function setup() {
   // put setup code here
   createCanvas(800,600);
- background('photo-1480497490787-505ec076689f.jpg');
+ img = loadImage('photo-1480497490787-505ec076689f.jpg');
 }
 
 
@@ -23,6 +23,7 @@ function setup() {
 
 function draw() {
   //check for collision
+  image(img, 0, 0);
   hit= collideRectRect(x1,y,size,size,x2,y,size,size);
   
   //Output a statement to console
