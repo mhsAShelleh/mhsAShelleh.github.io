@@ -17,11 +17,11 @@ function draw() {
  drawWindow(x,y);
 
 //window in top right corner
- x=3*width/4
+ x=3*width/4;
  drawWindow(x,y);
 
 //window in bottom right corner
- y=3*height/4
+ y=3*height/4;
  drawWindow(x,y);
 
 //window in bottom left corner
