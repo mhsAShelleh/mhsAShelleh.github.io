@@ -27,26 +27,32 @@ function draw() {
   let x=width/2-Facewidth*1.5;
   let y=height/2-Faceheight*1.35;
 
+ //EYEBROW top left
   drawBrows(x,y);
-
+ //EYEBROW top right
   x=width/2+Facewidth/2;
   drawBrows(x,y);
   drawMouth();
 
 
-  /*----------Draw the eyes=@Abdol + Glasses by Charlie-----------*/
+  /*----------Draw the eyes=@Abdol + Glasses=Charlie-----------*/
   x=width/2+Facewidth;
   y=height/2-Faceheight;
-  let z=-1; /*this Z value will make the drawGlasses function draw the glasses'
-  two "arms" in opposite directions, instead of in the same direction @Charlie*/
+  let z=-1;
 
+  //Draw the eyes on the top left corner
   drawEye(x,y);
+
+  //draw the first half of the glasses on top left
   drawGlasses(x,y,z);
 
   x=width/2-Facewidth;
   y=height/2-Faceheight;
   z=1;
+  //Draw the eyes on the top right corner
   drawEye(x,y);
+
+  //draw the second half of the glasses on top right
   drawGlasses(x,y,z);
 
   /*------------------Draw hair @Abdol-------------*/
@@ -133,6 +139,8 @@ function drawNeck(){
 
 /*-----------------------Draw Hair Function @ABDOL--------------*/
 function drawHair(){
+
+  //to see the individual shapes, remove "no" from "noStroke" and add 255 inbetween the brackets.
   noStroke();
   fill(0);
   quad(width/2-Facewidth*1.75,height/2-Faceheight*2,width/2-Facewidth*2,height/2-Faceheight/2,width/2-Facewidth*2.5,height/2-Faceheight/3,width/2-Facewidth*2.5,height/2-Faceheight*1.8);
@@ -153,7 +161,7 @@ function drawMouth(){
 }
 
 
-/*----------Draw Facial Hair @Abdol, Matt------*/
+/*----------Draw Facial Hair @AbdoL------*/
 function drawBeard(){
   noStroke();
   fill(42, 43, 42);
