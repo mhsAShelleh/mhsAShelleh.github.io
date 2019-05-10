@@ -1,5 +1,5 @@
 //Global Variables
-let x=100
+let x=100;
 
 function setup() {
   createCanvas(800, 600);
@@ -53,9 +53,5 @@ function keyPressed(){
 
 function mouseDragged(){
   line(x/5, x/5,mouseX,mouseY);
-  if (mouseIsPressed) {
-
-}
-
 
 }
