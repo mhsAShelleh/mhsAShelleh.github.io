@@ -1,11 +1,12 @@
 function preload() {
- mySound = loadSound('grenade-launcher-daniel_simon.mp3'); 
+ mySound = loadSound('grenade-launcher-daniel_simon.mp3');
 }
 
-let x1=0
-let x2=600
-let y= 300
-let size=50
+// Global variables 
+let x1=0;
+let x2=600;
+let y= 300;
+let size=50;
 let x1speed=5;
 let x2speed=5;
 
@@ -15,17 +16,15 @@ let hit= false;
 function setup() {
   // put setup code here
   createCanvas(800,600);
+  //background image
  img = loadImage('photo-1480497490787-505ec076689f.jpg');
 }
-
-
-
 
 function draw() {
   //check for collision
   image(img, 0, 0);
   hit= collideRectRect(x1,y,size,size,x2,y,size,size);
-  
+
   //Output a statement to console
   print(hit);
 
@@ -45,8 +44,8 @@ function draw() {
 
   //if they dont collide what to do
   else{
-    image(img, 0, 0);  
-    fill(127)
+    image(img, 0, 0);
+    fill(127);
     rect(x1,y,size,size);
 
 
@@ -78,12 +77,11 @@ function playSound(){
 
 function keyPressed(){
  if (keyCode === 82){
-  x1=0
-  x2=600
-  y= 300
+  x1=0;
+  x2=600;
+  y= 300;
   x1speed=5;
   x2speed=5;
   loop();
  }
 }
-
