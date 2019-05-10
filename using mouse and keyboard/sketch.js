@@ -1,3 +1,4 @@
+//Global Variables
 let x=100
 
 function setup() {
@@ -7,10 +8,6 @@ function setup() {
 }
 
 function draw() {
-
-
-
-
   rect(mouseX, mouseY,x/5, x/5);
   if (mouseIsPressed) {
     // When the mouse button is pressed
@@ -21,21 +18,16 @@ function draw() {
     //when mouse button is heading the size changes
     rect(mouseX,mouseY,x/2,x/2);
     }
+    // When the mouse button is pressed
+    // direct the line
 
-    line(x/5, x/5,mouseX,mouseY);
     if (mouseIsPressed) {
-      // When the mouse button is pressed
-      // direct the line
+       line(x/5, x/5,mouseX,mouseY);
+}
 }
 
-}
 
-
-
-
-
-
-
+//If the mouse is dragged them change the colour of the squares
 function mouseDragged(){
   rect(mouseX, mouseY,x/5, x/5);
   if (mouseIsPressed) {
@@ -62,8 +54,6 @@ function keyPressed(){
 function mouseDragged(){
   line(x/5, x/5,mouseX,mouseY);
   if (mouseIsPressed) {
-    // When the mouse button is pressed
-    // direct the line
 
 }
 
