@@ -11,13 +11,14 @@ let y= height/1.8
 let jump = false;  //Character is NOT jumping
 let dy = 0  //Change in height  <------------------------
 let gravity = 0
+let falling = true
 
 function preload() {
   //Assign the image file to the variable
-  img = loadImage('background-mountain.jpg');
-  walpaper= loadImage('walpaper.jpg')
-  gif_loadImg = loadImage("walkingNew.gif");
-  gif_createImg = createImg("walkingNew.gif");
+  img = loadImage('./images/background-mountain.jpg');
+  walpaper= loadImage('./images/walpaper.jpg')
+  gif_loadImg = loadImage("./images/walkingNew.gif");
+  gif_createImg = createImg("./images/walkingNew.gif");
 
 }
 
@@ -48,6 +49,15 @@ function draw() {
 
   else if (level ===1) {
                             /*--------------------------The score Board-------------------------*/
+    //Check to see if character hit the floating platform
+    hit= collideRectRect(x+50,y+270,165,5,width/3,height/1.5,200,40);
+
+    //Print all of our vertical values
+    print("HIT:",hit)
+    print("dy:",dy)
+    print("Jump:",jump)
+
+    //Check if character hits the base
     if (y>height/1.8) {
       y = height/1.8;
       gravity = 0;
@@ -55,6 +65,23 @@ function draw() {
       jump = false;
 
     }
+
+    //Check if character hits floating platform AND is falling
+    else if (hit && dy<=0) {
+      dy = 0
+      gravity = 0
+      jump = false
+    }
+
+    //If character isn't jumping, pull down on them
+    else if (jump === false) {
+      dy = -5
+      gravity = .5
+    }
+
+
+
+
     //Change the background and add the character
     image(img, 0, 0, 1240,820);
     fill(140);
@@ -63,8 +90,14 @@ function draw() {
 
     y-=dy
     dy-=gravity
-    print(dy)
+    //print(dy)
     //Move the character based on input from the user (arrow keys)
+
+    //check to see if character landed on platform
+
+
+
+
 
 
     if (keyIsDown(RIGHT_ARROW)) {
@@ -76,6 +109,7 @@ function draw() {
 
     }
 
+    //Jump (increase dy)
     if (keyIsDown(UP_ARROW) && jump===false) {
       jump=true
       dy = 15;
@@ -98,6 +132,10 @@ function draw() {
     // Blocks for the game
     fill(0)
     rect(width/3,height/1.5,200,40)
+
+
+
+
    }
 
 
@@ -105,7 +143,7 @@ function draw() {
   /*--------------------END GAME--------------------*/
   /*--------------------WIN SCREEN--------------------*/
 
-  else if (level===2) {
+else if (level===2) {
     //Change the backround and inform the user that they won
     background(0,255,0);
     fill(0);
