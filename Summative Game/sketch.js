@@ -128,8 +128,6 @@ function draw() {
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////LEVEL 1
   else if (level ===2) {
 
-
-
     /*---------------Landing of the player and the ladder areas---------*/
 
     //part 1 of level 1 collide and stop the player
@@ -606,6 +604,13 @@ c5=1100
   rect(0,800,1240,20);
   fill(97, 42, 0);
   rect(0,809,1240,15);
+
+
+//indication of the level the player is on
+    fill(255);
+    textSize(20);
+    text(' Level= 1/8', 50, 20);
+
 
   //Once reached end of map go to level 2
    exit=collideRectRect(x-10,y-10,2,100,0,800,100,2);
@@ -1162,6 +1167,12 @@ else if (level===3) {
  fill(97, 42, 0);
  rect(0,809,1240,15);
 
+ //indication of the level the player is on
+     fill(255);
+     textSize(20);
+     text(' Level= 2/8', 50, 20);
+
+
  //Once reached end of map go to level 2
   exit=collideRectRect(x-10,y-10,2,100,0,800,100,2);
 
@@ -1713,6 +1724,12 @@ else if (level===3) {
      rect(0,800,1240,20);
      fill(97, 42, 0);
      rect(0,809,1240,15);
+
+     //indication of the level the player is on
+         fill(255);
+         textSize(20);
+         text(' Level= 3/8', 50, 20);
+
 
      //Once reached end of map go to level 2
       exit=collideRectRect(x-10,y-10,2,100,0,800,100,2);
@@ -2302,6 +2319,12 @@ else if (level===3) {
           fill(97, 42, 0);
           rect(0,809,1240,15);
 
+          //indication of the level the player is on
+              fill(255);
+              textSize(20);
+              text(' Level= 4/8', 50, 20);
+
+
           //Once reached end of map go to level 2
            exit=collideRectRect(x-10,y-10,2,100,0,800,100,2);
 
@@ -2885,6 +2908,12 @@ else if (level===3) {
                     rect(0,800,1240,20);
                     fill(97, 42, 0);
                     rect(0,809,1240,15);
+
+                    //indication of the level the player is on
+                        fill(255);
+                        textSize(20);
+                        text(' Level= 5/8', 50, 20);
+
 
                     //Once reached end of map go to level 2
                      exit=collideRectRect(x-10,y-10,2,100,0,800,100,2);
@@ -3471,6 +3500,12 @@ else if (level===3) {
                          fill(97, 42, 0);
                          rect(0,809,1240,15);
 
+                         //indication of the level the player is on
+                             fill(255);
+                             textSize(20);
+                             text(' Level= 6/8', 50, 20);
+
+
                          //Once reached end of map go to level 2
                           exit=collideRectRect(x-10,y-10,2,100,0,800,100,2);
 
@@ -4055,6 +4090,12 @@ else if (level===3) {
                                    fill(97, 42, 0);
                                    rect(0,809,1240,15);
 
+                                   //indication of the level the player is on
+                                       fill(255);
+                                       textSize(20);
+                                       text(' Level= 7/8', 50, 20);
+
+
                                    //Once reached end of map go to level 2
                                     exit=collideRectRect(x-10,y-10,2,100,0,800,100,2);
 
@@ -4367,6 +4408,12 @@ else if (level===3) {
                                                           text('Boss Health:', 940, 35);
                                                           fill(224, 17, 17);
                                                          rect (1000,20, health*3,20 )
+                                                         
+                                                         //indication of the level the player is on
+                                                             fill(255);
+                                                             textSize(20);
+                                                             text(' Level= 8/8', 50, 20);
+
 
                                              //Once reached end of map go to level 2
                                               exit=collideRectRect(x-10,y-10,2,100,0,800,100,2);
